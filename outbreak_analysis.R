@@ -29,7 +29,7 @@ outbreak_data <-
   
   bind_rows(
     
-    readxl::read_xlsx(path = "~/Desktop/outbreak_data.xlsx",
+    readxl::read_xlsx(path = "outbreak_data.xlsx",
                       sheet = 'sars_2003') %>% 
       select(date, 
              deaths) %>%
@@ -40,7 +40,7 @@ outbreak_data <-
   
   bind_rows(
     
-    readxl::read_xlsx(path = "~/Desktop/outbreak_data.xlsx",
+    readxl::read_xlsx(path = "outbreak_data.xlsx",
                       sheet = 'ebola_2014') %>% 
       select(date, 
              deaths) %>%
@@ -50,7 +50,7 @@ outbreak_data <-
   
   bind_rows(
     
-    readxl::read_xlsx(path = "~/Desktop/outbreak_data.xlsx",
+    readxl::read_xlsx(path = "outbreak_data.xlsx",
                       sheet = 'cholera_haiti_2010') %>% 
       select(date, 
              deaths) %>%
@@ -60,7 +60,7 @@ outbreak_data <-
   
   bind_rows(
     
-    readxl::read_xlsx(path = "~/Desktop/outbreak_data.xlsx",
+    readxl::read_xlsx(path = "outbreak_data.xlsx",
                       sheet = 'mers_2012') %>% 
       select(date, 
              deaths) %>%
@@ -70,7 +70,7 @@ outbreak_data <-
   
   bind_rows(
     
-    readxl::read_xlsx(path = "~/Desktop/outbreak_data.xlsx",
+    readxl::read_xlsx(path = "outbreak_data.xlsx",
                       sheet = 'h1n1_swine_2009') %>% 
       select(date, 
              deaths) %>%
@@ -221,7 +221,7 @@ animate(my_anim,
         duration = 30, 
         fps = 5, 
         width = 500, 
-        height = 350, 
+        height = 300, 
         renderer = gifski_renderer())
 anim_save("outbreak_animation.gif")
 
